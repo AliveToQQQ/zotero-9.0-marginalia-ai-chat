@@ -1,9 +1,9 @@
 # Marginalia ✨
-
+##原项目地址  https://github.com/sheny-bio/marginalia.git
 [![zotero target version](https://img.shields.io/badge/Zotero-7--8-green?style=flat-square&logo=zotero&logoColor=CC2936)](https://www.zotero.org)
 [![Using Zotero Plugin Template](https://img.shields.io/badge/Using-Zotero%20Plugin%20Template-blue?style=flat-square&logo=github)](https://github.com/windingwind/zotero-plugin-template)
 
-Marginalia 是一个为 Zotero 7-8 设计的 AI 阅读助手，帮助你更高效地阅读、翻译和理解学术论文。
+Marginalia 是一个为 Zotero 7-9 设计的 AI 阅读助手，帮助你更高效地阅读、翻译和理解学术论文。
 
 > **兼容所有 OpenAI 兼容 API** — OpenAI / Claude / DeepSeek / 国产大模型均可使用
 
