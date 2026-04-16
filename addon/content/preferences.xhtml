@@ -1,0 +1,133 @@
+<linkset>
+  <html:link rel="localization" href="marginalia-preferences.ftl" />
+</linkset>
+<groupbox
+  onload="Zotero.__addonInstance__.hooks.onPrefsEvent('load', { window })"
+>
+  <!-- API Configuration Section -->
+  <html:fieldset>
+    <html:legend data-l10n-id="pref-api-config"></html:legend>
+    <hbox align="center">
+      <html:label
+        for="marginalia-apiUrl"
+        style="width: 120px"
+        data-l10n-id="pref-api-url"
+      ></html:label>
+      <html:input
+        type="text"
+        id="marginalia-apiUrl"
+        preference="extensions.zotero.marginalia.apiUrl"
+        style="flex: 1; min-width: 400px"
+        data-l10n-id="pref-api-url-input"
+      />
+    </hbox>
+    <hbox align="center">
+      <html:label
+        for="marginalia-apiKey"
+        style="width: 120px"
+        data-l10n-id="pref-api-key"
+      ></html:label>
+      <html:input
+        type="password"
+        id="marginalia-apiKey"
+        preference="extensions.zotero.marginalia.apiKey"
+        style="flex: 1; min-width: 400px"
+      />
+    </hbox>
+    <hbox align="center">
+      <html:label
+        for="marginalia-model"
+        style="width: 120px"
+        data-l10n-id="pref-model"
+      ></html:label>
+      <html:input
+        type="text"
+        id="marginalia-model"
+        preference="extensions.zotero.marginalia.model"
+        style="flex: 1; min-width: 400px"
+        data-l10n-id="pref-model-input"
+      />
+    </hbox>
+    <hbox
+      align="center"
+      style="
+        margin-top: 4px;
+        padding: 8px;
+        background: #f0f7ff;
+        border-radius: 6px;
+        border: 1px solid #c2ddf7;
+      "
+    >
+      <html:input
+        type="checkbox"
+        id="marginalia-enableVision"
+        preference="extensions.zotero.marginalia.enableVision"
+        style="margin-right: 6px"
+      />
+      <html:label
+        for="marginalia-enableVision"
+        data-l10n-id="pref-enable-vision"
+        style="color: #1a6fba; font-weight: 600; margin-right: 8px"
+      ></html:label>
+      <html:span
+        data-l10n-id="pref-enable-vision-hint"
+        style="color: #888; font-size: 11px"
+      ></html:span>
+    </hbox>
+    <hbox style="gap: 12px; margin-top: 4px">
+      <button
+        id="marginalia-test-connection"
+        data-l10n-id="pref-test-connection"
+      />
+      <button id="marginalia-save-settings" data-l10n-id="pref-save" />
+    </hbox>
+  </html:fieldset>
+
+  <!-- Chat Settings Section -->
+  <html:fieldset>
+    <html:legend data-l10n-id="pref-chat-settings"></html:legend>
+    <hbox align="center">
+      <html:label
+        for="marginalia-maxHistoryRounds"
+        style="width: 130px"
+        data-l10n-id="pref-max-history-rounds"
+      ></html:label>
+      <html:input
+        type="number"
+        id="marginalia-maxHistoryRounds"
+        preference="extensions.zotero.marginalia.maxHistoryRounds"
+        min="1"
+        max="100"
+        value="20"
+        style="width: 60px"
+      />
+    </hbox>
+    <hbox align="start">
+      <html:label
+        for="marginalia-systemPrompt"
+        style="width: 120px; margin-top: 8px"
+        data-l10n-id="pref-system-prompt"
+      ></html:label>
+      <html:textarea
+        id="marginalia-systemPrompt"
+        preference="extensions.zotero.marginalia.systemPrompt"
+        style="
+          flex: 1;
+          height: 100px;
+          padding: 8px;
+          border: 1px solid #d1d1d6;
+          border-radius: 4px;
+          font-family: monospace;
+          font-size: 12px;
+        "
+        data-l10n-id="pref-system-prompt-input"
+      ></html:textarea>
+    </hbox>
+  </html:fieldset>
+</groupbox>
+<vbox>
+  <html:label
+    data-l10n-id="pref-help"
+    data-l10n-args='{"time": "__buildTime__","name": "__addonName__","version":"__buildVersion__"}'
+  ></html:label>
+</vbox>
